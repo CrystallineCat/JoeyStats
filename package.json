@@ -1,0 +1,22 @@
+{
+  "name": "joey-stats",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "^3.2.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "stylus": "^0.59.0",
+    "stylus-loader": "^7.1.0"
+  },
+  "dependencies": {
+    "@vuestic/nuxt": "^1.0.10",
+    "redis": "^4.6.4",
+    "vue-vega": "https://github.com/CrystallineCat/vue-vega"
+  }
+}
