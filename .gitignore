@@ -19,7 +19,7 @@
 dist
 
 # Project exclude paths
-/node_modules/
+node_modules/
 
 .idea
 

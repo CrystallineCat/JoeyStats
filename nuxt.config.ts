@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     modules: ['@vuestic/nuxt'],
     runtimeConfig: {
         redisPassword: '',
+        public: {
+            redisApi: '',
+        },
     },
     vuestic: {
         config: {

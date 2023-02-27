@@ -1,9 +1,12 @@
 export default function(query: string) {
-    const reply = useLazyAsyncData(query, () => $fetch("/api/redis", { method: "post", body: query }))
+    const config = useRuntimeConfig()
+    const reply = useLazyAsyncData(query, () => $fetch(config.public.redisApi, { method: "post", body: query }))
 
     watchEffect(
         () => {
+            // @ts-ignore
             if (reply.data.value?.error) {
+                // @ts-ignore
                 throw new Error(`${reply.data.value.error}\n${query}`)
             }
         }
